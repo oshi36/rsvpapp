@@ -3,12 +3,12 @@ pipeline {
   stages {
     stage('build') {
       steps {
-          sh 'sudo pip install -r requirements.txt --user'
+          sh ' pip install -r requirements.txt --user'
       }
     }
     stage('test') {
       steps {
-        sh 'sudo pytest ./tests/test_rsvpapp.py'
+        sh 'pytest ./tests/test_rsvpapp.py'
       }
      
     }
