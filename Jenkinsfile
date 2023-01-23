@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('build') {
       steps {
-          sh 'python -m pip install --upgrade pip && pip install flake8 pytest pytest-cov'
+          sh 'pip install flake8 pytest pytest-cov'
           sh 'pip install -r requirements.txt'
       }
     }
